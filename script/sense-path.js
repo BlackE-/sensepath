@@ -12,28 +12,28 @@
 	let bgText = gsap.timeline();
 	bgText.from('.bgText',{duration:1.5,translateY:200,opacity:0});
 	bgText.to('.bgText',{translateY:0,opacity:1});
+
+	const rightbtn = document.getElementById('right');
+	const backgroundID = document.getElementById('bgImage');
+	let classActive = 1;
 	
-	// let oldx = 0
-	// const blobs = document.getElementsByClassName('blob');
-	changeDirection = (direction) =>{
-		// if(direction){
-		// 	for(blob of blobs){
-		// 		blob.setAttribute('cx',parseInt(blob.getAttribute('cx')) - 5);
-	 //    	}
-		// }else{
-		// 	for(blob of blobs){
-		// 		blob.setAttribute('cx',parseInt(blob.getAttribute('cx')) + 5);
-		// 	}
-		// }
+	const setBackgroundClass = (number)=>{
+		backgroundID.className = '';
+		switch(classActive){
+			case 2:backgroundID.classList.add('contrast');break;
+			case 3:backgroundID.classList.add('saturate');break;
+			case 4:backgroundID.classList.add('hue');break;
+			case 5:backgroundID.classList.add('opacity');break;
+			default:backgroundID.classList.add('grayscale');break;
+		}
 	}
- //  	function getPos(e){
-	//     if(e.pageX < oldx){
-	//     	changeDirection(1);
-	//     }else if(e.pageX > oldx){
-	//     	changeDirection(0);
-	//     }
-	//     oldx = e.pageX;
-	// }
+	setBackgroundClass(classActive);
+	rightbtn.addEventListener('click',()=>{
+		classActive++;
+		classActive = classActive%6;
+		console.log(classActive);
+		setBackgroundClass(classActive);
+	});
 
 	window.addEventListener('scroll', function(e) {
 	  let scroll_position = window.scrollY;
@@ -90,6 +90,11 @@
 	const alianzasTl = gsap.timeline({scrollTrigger: {trigger: "#alianzas"}});
 	alianzasTl.to('.alianzasHeader', {opacity:1,duration:1.0});
 	alianzasTl.to('.logosContainer', {opacity:1,duration:0.5},"-=0.2");
+
+	const galeriaTl = gsap.timeline({scrollTrigger: {trigger: "#galeria"}});
+	galeriaTl.to('.galeriaHeader', {opacity:1,duration:1.0});
+	galeriaTl.to('#carousel-with-preview', {opacity:1,y:0,duration:0.5},"-=0.2");
+	galeriaTl.to('.carousel-preview', {opacity:1,y:0,duration:1.0},"-=0.2");
 
 	const expertiseTl = gsap.timeline({scrollTrigger: {trigger: "#expertise"}});
 	expertiseTl.to('.expertiseHeader', {opacity:1,x:0,duration:1.0});

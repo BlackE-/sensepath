@@ -1,14 +1,15 @@
 /*html {scroll-behavior: smooth;}*/
 body{font-family: 'Sen', sans-serif, Arial;}
 .desktop{display: grid;}.mobile{display: none;}
-@media (max-width: 40.06rem) {.desktop{display: none !important;}.mobile{display: grid !important;}}
+@media (max-width: 900px)   {/*tablet*/.desktop{display: none !important;}.mobile{display: grid !important;}}
 .container{width:90%;max-width: 1080px;margin:0 auto;}
-@media (max-width: 40.06rem) {.container{width:80%;padding: 0 20px;}}
+@media (max-width: 900px)   {/*tablet*/.container{width:80%;padding: 0 20px;}}
+.banner{background: #6a24f0;color:#fff;padding: 10px 0;}
+.banner p{text-transform:uppercase;text-align:center;font-size:13px;margin: 0;}
 
-header{background: #fff;padding:20px 0 0 0;height:160px;overflow: hidden;}
+header{background: #fff;padding:20px 0;overflow: hidden;}
 header .container{display: grid;grid-template-columns:250px 2fr;}
-@media (max-width: 40.06rem) {header {height: auto;padding: 20px 0;}}
-@media (max-width: 40.06rem) {header .container{    grid-template-columns: 50px 150px;align-items: center;}}
+@media (max-width: 900px)   {/*tablet*/header .container{    grid-template-columns: 50px 150px;align-items: center;}}
 
 header .open{font-size: 20px;}
 header .logoContainer{}
@@ -38,11 +39,12 @@ header .sidebar ul{list-style: none;margin:0;padding:0;}
 header .sidebar ul li p{color:#fff;}  
 
 footer{padding:100px 0 50px 0;}
-footer .container{display: grid;grid-template-columns:1fr 1fr;grid-gap:50px;}
-@media (max-width: 40.06rem) {footer .container{display: grid;grid-template-columns:1fr;grid-gap:25px;}}
+footer #topFooter{display: grid;grid-template-columns:1fr 1fr;grid-gap:50px;}
+@media (max-width: 40.06rem) {footer #topFooter{display: grid;grid-template-columns:1fr;grid-gap:25px;}}
+footer .container .leftContainer .logofooter{margin-bottom: 20px;}
 footer .container .leftContainer a{text-decoration: none;color:#727177;}
-footer .container .leftContainer a div{display: grid;grid-template-columns: 50px auto;align-items: center;margin:20px 0;}
-footer .container .leftContainer a div p{font-size: 20px;}
+footer .container .leftContainer a div{display: grid;grid-template-columns: 20px auto;align-items: center;margin:30px 0;grid-gap:10px;}
+footer .container .leftContainer a div p{font-size: 20px;margin:0;}
 footer .container .rightContainer h2{color:#4b2deb;font-size: 30px;font-weight:800;}
 footer .container .rightContainer form{text-align: right;}
 footer .container .rightContainer form input[type="text"],
@@ -74,6 +76,14 @@ footer .container .rightContainer form input[type="submit"]:hover{cursor: pointe
 
 }
 
+footer #bottomFooter{text-align: center;}
+footer #bottomFooter a{color:#727177;text-decoration: underline;}
+footer #bottomFooter p{color:#727177;display: inline-block;padding:0 10px;}
+@media (max-width: 40.06rem) {
+	footer #bottomFooter p:nth-child(2),
+	footer #bottomFooter p:nth-child(4){display: none}
+	footer #bottomFooter p{padding:0;}
+}
 footer .up{position:fixed;opacity:0;bottom:10px;right:20px;border-radius: 50px;height: 50px;width:50px;border:1px solid #005cf5;display: grid;align-items: center;justify-content: center;transition: all 300ms ease-in;}
 footer .up.active{opacity: 1;}
 footer .up:hover{border:3px solid #005cf5;cursor: pointer;}

@@ -6,6 +6,11 @@
 </head>
 <body>
 	<div class="bodyContainer">
+		<div class="banner">
+			<div class="container">
+				<p>Por tu seguridad, seguimos los protocolos y recomendaciones Para evitar la posible propagación del <b>COVID -19</b> entre clientes y personal</p>
+			</div>
+		</div>
 		<header id="top">
 			<div class="container">
 	  			<div class="mobile open" role="button" aria-label="open sidebar" on="tap:sidebar.toggle" tabindex="0" >☰</div>
@@ -42,9 +47,8 @@
 					</nav>
 				</amp-sidebar>
   		</header>
-
 		<section id="header-img">
-			<div class="bgImage"></div>
+			<div id="bgImage"></div>
 			<svg id="blobCont" class="blobCont" onmousemove="getPos(event)">
 				<image xlink:href="img/header-img-only.jpg" mask="url(#mask)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
 			  	<defs>
@@ -96,7 +100,11 @@
 					    	<span class="t13">!</span>
 					    </button>
 					</div>
+					<div class="changeBackground">
+						<button class="right" id="right">&#8635;</button>
+					</div>
 				</div>
+				
 			</div>
 		</section>
 		<section id="procesos">
@@ -204,6 +212,37 @@
 				</div>
 			</div>
 		</section>
+		<section id="galeria">
+			<div class="container">
+				<h2 class="galeriaHeader">GALERÍA</h2>
+				<amp-carousel id="carousel-with-preview" width="450" height="300" layout="responsive" type="slides" role="region" aria-label="Carousel with slide previews"
+				>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</amp-carousel>
+				<div class="carousel-preview desktop">
+				  <button on="tap:carousel-with-preview.goToSlide(index=0)">
+				    <amp-img src="img/galeria1-thumb.jpg" width="60" height="40" alt="galeria1"
+				    ></amp-img>
+				  </button>
+				  <button on="tap:carousel-with-preview.goToSlide(index=1)">
+				    <amp-img src="img/galeria2-thumb.jpg" width="60" height="40" alt="galeria1"></amp-img>
+				  </button>
+				  <button on="tap:carousel-with-preview.goToSlide(index=2)">
+				    <amp-img src="img/galeria3-thumb.jpg" width="60" height="40" alt="galeria1"></amp-img>
+				  </button>
+				  <button on="tap:carousel-with-preview.goToSlide(index=3)">
+				    <amp-img src="img/galeria4-thumb.jpg" width="60" height="40" alt="galeria1"></amp-img>
+				  </button>
+				  <button on="tap:carousel-with-preview.goToSlide(index=4)">
+				    <amp-img src="img/galeria5-thumb.jpg" width="60" height="40" alt="galeria1"></amp-img>
+				  </button>
+				</div>
+			</div>
+		</section>
 		<section id="expertise">
 			<div class="imgContainer"></div>
 			<div class="container">
@@ -211,24 +250,24 @@
 			</div>
 		</section>
 		<footer>
-			<div class="container">
+			<div class="container" id="topFooter">
 				<div class="leftContainer">
-					<amp-img src="img/logo-sensepath.svg" width="300" height="140" layout="intrinsic"></amp-img>
+					<amp-img class="logofooter" src="img/logo-sensepath.svg" width="300" height="140" layout="intrinsic"></amp-img>
 					<a href="https://goo.gl/maps/1CuxfsVuB33qf8H18" target="_blank"> 
 						<div class="">
-							<amp-img src="img/svg-pin.svg" width="35" height="45" layout="fixed"></amp-img>
+							<amp-img src="img/svg-pin.svg" width="35" height="45" layout="responsive"></amp-img>
 							<p><b>Av de los Insurgentes Sur 116,</b> Juárez, Cuauhtémoc, 06600, CDMX</p>
 						</div>
 					</a>
 					<a href="tel:55 6610 6249" target="_blank">
 						<div class="">
-							<amp-img src="img/svg-mobile.svg" width="40" height="60" layout="fixed"></amp-img>
+							<amp-img src="img/svg-mobile.svg" width="40" height="60" layout="responsive"></amp-img>
 							<p><b>55</b> 6610 6249<br><b>55</b>000-00000</p>
 						</div>
 					</a>
 					<a href="mailto:pfuentes@sense-path.com" target="_blank">
 						<div class="">
-							<amp-img src="img/svg-email.svg" width="45" height="35" layout="fixed"></amp-img>
+							<amp-img src="img/svg-email.svg" width="45" height="35" layout="responsive"></amp-img>
 							<p>pfuentes<b>@sense-path</b>.com</p>
 						</div>
 					</a>
@@ -244,6 +283,13 @@
 						<p class="response" id="response"></p>
 					</form>
 				</div>
+			</div>
+			<div class="container" id="bottomFooter">
+					<p><a href="#" target="_blank">AVISO DE PRIVACIDAD</a></p>
+					<p>/</p>
+					<p><a href="#" target="_blank">TÉRMINOS Y CONDICIONES</a></p>
+					<p>/</p>
+					<p>Copyright <?php echo date('Y');?>. Todos los derechos reservados</p>
 			</div>
 			<div class="up" id="up">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.65 4.79" width="12" height="5"><g><g><path d="M5.82.24a.68.68,0,0,0-.39.12L.33,3.93l.37.53L5.8.89h0L11,4.44l.37-.53L6.21.36A.68.68,0,0,0,5.82.24Z" style=""/></g></g></svg>
