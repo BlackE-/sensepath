@@ -20,6 +20,7 @@ header .menu .top ul{grid-template-columns: repeat(2,90px);grid-gap:20px;}
 header .menu .bottom ul{grid-template-columns: repeat(4,auto);align-items: center;grid-gap: 30px;}
 
 header .menu .top ul li{text-align: right;position: relative;font-weight: 700;color:#a0a0a0;transition: all 300ms ease-in;}
+header .menu .top ul li a{text-decoration: none;color:#a0a0a0;}
 header .menu .top ul li:after{position:absolute;content:'';top:calc(100% - 17px);left:0;width: 15px;height:15px;border-radius: 15px;background: #a0a0a0;transition: all 300ms ease-in;}
 header .menu .top ul li.active{color:#005cf5;}
 header .menu .top ul li.active:after{background: #005cf5;left:0;}

@@ -2,13 +2,13 @@
 <head>
   <?php include('header_meta.php');?>
   <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/index-eng.css">
 </head>
 <body>
 	<div class="bodyContainer">
 		<div class="banner">
 			<div class="container">
-				<p>Por tu seguridad, seguimos los protocolos y recomendaciones Para evitar la posible propagación del <b>COVID -19</b> entre clientes y personal</p>
+				<p>For your safety, we follow the protocols and recommendations To prevent the possible spread of <b> COVID -19 </b> between clients and staff</p>
 			</div>
 		</div>
 		<header id="top">
@@ -20,16 +20,16 @@
 	  			<div class="desktop menu">
 	  				<div class="top">
 	  					<ul>
-	  						<li class="active">ESPAÑOL</li>
-	  						<li><a href="index-eng">ENGLISH</a></li>
+	  						<li><a href="/">ESPAÑOL</a></li>
+	  						<li class="active">ENGLISH</li>
 	  					</ul>
 	  				</div>
 	  				<div class="bottom">
 	  					<ul>
-	  						<li class="link" id="link-procesos">PROCESOS</li>
-	  						<li class="link" id="link-experiencias">EXPERIENCIAS</li>
-	  						<li class="link" id="link-alianzas">ALIANZAS</li>
-	  						<li class="link contacto" id="link-contacto">CONTACTO</li>
+	  						<li class="link" id="link-procesos">PROCESSES</li>
+	  						<li class="link" id="link-experiencias">EXPERIENCE</li>
+	  						<li class="link" id="link-alianzas">PARTNERSHIPS</li>
+	  						<li class="link contacto" id="link-contacto">CONTACT US</li>
 	  					</ul>
 	  				</div>
 	  			</div>
@@ -39,10 +39,10 @@
 					<div class="close" role="button" aria-label="close sidebar" on="tap:sidebar.toggle" tabindex="0" >✕</div>
 					<nav class="">
 						<ul>
-							<li class="link-side" on="tap:sidebar.toggle" id="link-side-procesos"><p>PROCESOS</p></li>
-	  						<li class="link-side" on="tap:sidebar.toggle" id="link-side-experiencias"><p>EXPERIENCIAS</p></li>
-	  						<li class="link-side" on="tap:sidebar.toggle" id="link-side-alianzas"><p>ALIANZAS</p></li>
-	  						<li class="link-side" on="tap:sidebar.toggle" id="link-side-contacto"><p>CONTACTO</p></li>
+							<li class="link-side" on="tap:sidebar.toggle" id="link-side-procesos"><p>PROCESSES</p></li>
+	  						<li class="link-side" on="tap:sidebar.toggle" id="link-side-experiencias"><p>EXPERIENCE</p></li>
+	  						<li class="link-side" on="tap:sidebar.toggle" id="link-side-alianzas"><p>PARTNERSHIPS</p></li>
+	  						<li class="link-side" on="tap:sidebar.toggle" id="link-side-contacto"><p>CONTACT US</p></li>
 						</ul>
 					</nav>
 				</amp-sidebar>
@@ -83,21 +83,23 @@
 			<div class="bgTextContainer"> 
 				<div class="container">
 					<div class="bgText">
-						<h1><b>Estrategia sensorial</b><br>aplicada a tu marca</h1>
+						<h1><b>STRATEGIC SENSORY</b><br>APPLIED IN YOUR BRAND</h1>
 					    <button id="btn-contacto">
-					    	<span class="t1">¡</span>
-					    	<span class="t2">M</span>
-					    	<span class="t3">E</span>
-					    	<span class="t4">&nbsp;</span>
-					    	<span class="t5">I</span>
-					    	<span class="t6">N</span>
-					    	<span class="t7">T</span>
-					    	<span class="t8">E</span>
-					    	<span class="t9">R</span>
-					    	<span class="t10">E</span>
-					    	<span class="t11">S</span>
-					    	<span class="t12">A</span>
-					    	<span class="t13">!</span>
+					    	<span class="t1">I</span>
+					    	<span class="t2">&nbsp;</span>
+					    	<span class="t3">A</span>
+					    	<span class="t4">M</span>
+					    	<span class="t5">&nbsp;</span>
+					    	<span class="t6">I</span>
+					    	<span class="t7">N</span>
+					    	<span class="t8">T</span>
+					    	<span class="t9">E</span>
+					    	<span class="t10">R</span>
+					    	<span class="t11">E</span>
+					    	<span class="t12">S</span>
+					    	<span class="t13">T</span>
+					    	<span class="t14">E</span>
+					    	<span class="t15">D</span>
 					    </button>
 					</div>
 					<div class="changeBackground">
@@ -109,7 +111,7 @@
 		</section>
 		<section id="procesos">
 			<div class="container">
-				<h2>nuestros <b>procesos</b></h2>
+				<h2>OUR <b>PROCESSES</b></h2>
 				<div class="modules">
 					<div class="module m1">
 						<div class="moduleImgContainer" id="module1img">
@@ -118,8 +120,8 @@
 							</amp-img>
 						</div>
 						<div>
-							<h3>LA EXPERIENCIA<br>DE TU MARCA</h3>
-							<p>Generamos <b>atributos sensoriales</b> que impactan la experiencia de tu marca. Identificando qué atributos de tu fórmula te diferencian del benchmark.</p>
+							<h3>THE EXPERIENCE<br>OF YOUR BRAND</h3>
+							<p>We help you to understand the sensory attributes that impact the experience of your brand, identifying which attributes in your formula set you apart from the benchmark.</p>
 						</div>
 					</div>
 					<div class="module m2">
@@ -129,8 +131,8 @@
 							</amp-img>
 						</div>
 						<div id="module2Text">
-							<h3>TRANSFORMACIÓN</h3>
-							<p>Tendrás los atributos sensoriales que te potencian como líder del mercado y qué atributos no cambiar en tus reformulaciones por ahorros o cambios tecnológicos, para no perder la <b>preferencia del consumidor</b>.</p>
+							<h3>TRANSFORMATION</h3>
+							<p>You will have the necessary sensory attributes to bolster your position as a leader in the market as well as know which attributes not to change in your formulations due to costs and technology changes in order to maintain consumer preference.</p>
 						</div>
 					</div>
 					<div class="module m3">
@@ -140,8 +142,8 @@
 							</amp-img>
 						</div>
 						<div>
-							<h3>ESTANDARIZACIÓN<br>DE RECETAS</h3>
-							<p>Conocerás los atributos que deberán existir en <b>formulas globales</b> para satisfacer al consumidor en cada país. </p>
+							<h3>RECIPE STANDARDIZATION</h3>
+							<p>You will understand which attributes ought to be present in global formulas to satisfy consumers in each and every country.</p>
 						</div>
 					</div>
 					<div class="module m4">
@@ -151,8 +153,8 @@
 							</amp-img>
 						</div>
 						<div id="module4Text">
-							<h3>DESARROLLO DE<br>NUEVOS PRODUCTOS</h3>
-							<p>Identificar tus “Key Sensory Attributes” en el <b>desarrollo de la estrategia</b> del producto.</p>
+							<h3>Development of <br>new products</h3>
+							<p>Identify your "Key Sensory Attributes" in the product's development strategy</p>
 						</div>
 					</div>
 				</div>
@@ -161,37 +163,37 @@
 		<section id="experiencia">
 			<div class="container">
 				<div class="experienciaHeader">
-					<h2>EXPERIENCIA</h2>
-					<h3>Contamos con alta experiencia en diversas categorías de productos:</h3>
+					<h2>EXPERIENCE</h2>
+					<h3>We are highly specialized while also having broad experience with a diverse range of products.</h3>
 				</div>
 				<div class="experienciaContainer">
 					<div class="experiencia1">
 						<amp-img layout="fixed" src="img/experiencia1.png" width="87" height="73"></amp-img>
 						<ul>
-							<li><p>Café</p></li>
-							<li><p>Cacao, cocoa, manteca y chocolates</p></li>
-							<li><p>Cremadores</p></li>
-							<li><p>Lácteos</p></li>
-							<li><p>Alternativas de lácteo</p></li>
+							<li><p>Coffee</p></li>
+							<li><p>Cacao, cocoa, liquor cacao, chocolates</p></li>
+							<li><p>Creamers</p></li>
+							<li><p>Dairy products</p></li>
+							<li><p>Dairy alternatives</p></li>
 						</ul>
 					</div>
 					<div class="experiencia2">
 						<amp-img layout="fixed" src="img/experiencia2.png" width="87" height="79"></amp-img>
 						<ul>
-							<li><p>Bebidas alcohólicas</p></li>
-							<li><p>Helados</p></li>
-							<li><p>Refrigerados</p></li>
-							<li><p>Culinarios</p></li>
+							<li><p>Alcoholic drinks</p></li>
+							<li><p>Ice Creams</p></li>
+							<li><p>Refrigerated products</p></li>
+							<li><p>Culinary</p></li>
 							<li><p>Sodas</p></li>
 						</ul>
 					</div>
 					<div class="experiencia3">
 						<amp-img layout="fixed" src="img/experiencia3.png" width="84" height="78"></amp-img>
 						<ul>
-							<li><p>Jugos</p></li>
-							<li><p>Té</p></li>
-							<li><p>Panificación</p></li>
-							<li><p>Productos de Hogar como suavizantes, jabón, etc)</p></li>
+							<li><p>Juices</p></li>
+							<li><p>Tea</p></li>
+							<li><p>Bakery</p></li>
+							<li><p>Home products (e.g. softeners, soaps, etc.)</p></li>
 						</ul>
 					</div>
 				</div>
@@ -200,8 +202,8 @@
 		<section id="alianzas">
 			<div class="container">
 				<div class="alianzasHeader">
-					<h2>ALIANZAS</h2>
-					<p>Contamos con alianzas de expertos para brindar <b>Consultoría en estadística y estudios de Mercado</b>, así como Focus Group en línea.</p>
+					<h2>PARTNERSHIPS</h2>
+					<p>We foster and maintain partnerships with experts to offer Statistics Consulting and Consumer Test & online Focus Groups</p>
 				</div>
 				<div class="logosContainer">
 					<amp-img layout="fixed" src="img/logo-ift.webp" width="170" height="170">
@@ -215,7 +217,7 @@
 		</section>
 		<section id="galeria">
 			<div class="container">
-				<h2 class="galeriaHeader">GALERÍA</h2>
+				<h2 class="galeriaHeader">GALERY</h2>
 				<amp-carousel id="carousel-with-preview" width="450" height="300" layout="responsive" type="slides" role="region" aria-label="Carousel with slide previews"
 				>
 					<div></div>
@@ -247,7 +249,7 @@
 		<section id="expertise">
 			<div class="imgContainer"></div>
 			<div class="container">
-				<h1 class="expertiseHeader"><b>SOMOS LA EMPRESA MEXICANA</b> de más alto EXPERTISE SENSORIAL</h1>
+				<h1 class="expertiseHeader"><b>IN MEXICO WE ARE THE COMPANY</b> WITH THE HIGHEST SENSORY EXPERTISE</h1>
 			</div>
 		</section>
 		<footer>
@@ -274,13 +276,13 @@
 					</a>
 				</div>
 				<div class="rightContainer">
-					<h2>CONTACTO</h2>
+					<h2>CONTACT US</h2>
 					<form id="form-footer">
-						<input type="text" name="name" min="2" required placeholder="NOMBRE" />
-						<input type="email" name="email" required placeholder="CORREO ELECTRÓNICO" />
-						<input type="tel" name="phone" size="15" minlength="15" required placeholder="TELÉFONO (10 dígitos)" pattern="[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"/>
-						<textarea name="mensaje" placeholder="MENSAJE"></textarea>
-						<input type="submit" name="" value="ENVIAR">
+						<input type="text" name="name" min="2" required placeholder="NAME" />
+						<input type="email" name="email" required placeholder="EMAIL" />
+						<input type="tel" name="phone" size="15" minlength="15" required placeholder="PHONE NUMBER (10 digits)" pattern="[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"/>
+						<textarea name="mensaje" placeholder="TEXT"></textarea>
+						<input type="submit" name="" value="SEND">
 						<p class="response" id="response"></p>
 					</form>
 				</div>
@@ -290,7 +292,7 @@
 					<p>/</p>
 					<p><a href="#" target="_blank">TÉRMINOS Y CONDICIONES</a></p>
 					<p>/</p>
-					<p>Copyright <?php echo date('Y');?>. Todos los derechos reservados</p>
+					<p>Copyright <?php echo date('Y');?>. All rights reserved</p>
 			</div>
 			<div class="up" id="up">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.65 4.79" width="12" height="5"><g><g><path d="M5.82.24a.68.68,0,0,0-.39.12L.33,3.93l.37.53L5.8.89h0L11,4.44l.37-.53L6.21.36A.68.68,0,0,0,5.82.24Z" style=""/></g></g></svg>
@@ -300,7 +302,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
 		<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
-	    <script type="text/javascript" src="script/header.js"></script>
+	    <script type="text/javascript" src="script/header-eng.js"></script>
 	    <script type="text/javascript" src="script/sense-path.js"></script>
 
 	</div>

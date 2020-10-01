@@ -13,10 +13,11 @@
 #header-img .container .bgText{display: grid;grid-template-rows:auto 50px;text-transform: uppercase;}
 #header-img .container h1{font-weight: 100;color:#fff;font-size:45px;}
 #header-img .container h1 b{font-weight: 700;}
-#header-img .container #btn-contacto{width:250px;font-size:18px;background: #ff6173;padding:5px 10px;font-family: 'Sen', sans-serif, Arial;font-weight:700;text-transform:uppercase;border:3px solid transparent;outline:none;border-radius:0;color:#fff;box-shadow:-5px 5px 5px rgba(0,0,0,0.5);transition: all 100ms ease-out;}
-#header-img .container #btn-contacto span{display: inline-block;padding:0 0.5px 0 0;transition: all 300ms ease-out;}
+#header-img .container #btn-contacto{width:250px;font-size:16px;background: #ff6173;padding:5px 5px;font-family: 'Sen', sans-serif, Arial;font-weight:700;text-transform:uppercase;border:3px solid transparent;outline:none;border-radius:0;color:#fff;box-shadow:-5px 5px 5px rgba(0,0,0,0.5);transition: all 100ms ease-out;}
+#header-img .container #btn-contacto span{display: inline-block;padding:0;transition: all 300ms ease-out;}
 #header-img .container #btn-contacto:hover{cursor:pointer;background: #fff;color:#ff6173;border:3px solid #ff6173;box-shadow:5px 5px 5px rgba(0,0,0,0.5);}
 #header-img .container #btn-contacto:hover span{animation-name: fromtop;}
+
 
 .t1 {animation-duration: 1s;    }
 .t2 {animation-duration: 1.01s; }
@@ -31,6 +32,8 @@
 .t11{animation-duration: 1.10s; }
 .t12{animation-duration: 1.11s; }
 .t13{animation-duration: 1.12s; }
+.t14{animation-duration: 1.14s; }
+.t15{animation-duration: 1.16s; }
 
 @keyframes fromtop{ 
  0%  {opacity:0;transform: translate(0,-20px);} 
@@ -48,12 +51,6 @@
  75% {opacity:0.7;}
  100%{opacity:1;transform: translate(0px,0);}
 }
-
-@-webkit-keyframes gradient {}
-@-moz-keyframes gradient {}
-@-ms-keyframes gradient {}
-@-o-keyframes gradient {}
-@keyframes gradient {}
 .changeBackground{display: grid;grid-template-columns:50px 50px;}
 .changeBackground button{border-radius:30px; border:0;height:30px;width:30px;outline: none;transition: all 300ms ease-in;background: #fff;}
 .changeBackground button:hover{cursor:pointer;background: rgba(255,97,115,1);color:#fff;}
@@ -432,7 +429,7 @@
   /*background: linear-gradient(-45deg, rgba(145,34,241,1) 0%, rgba(155,39,230,1) 30%, rgba(235,99,150,1) 70%, rgba(255,115,132,1) 100%);*/
 }
 #expertise .imgContainer{width:100%;position: absolute;height:100%;top:0;background-image: url(../img/expertise_only.png);background-repeat: no-repeat;background-position:100%;}
-#expertise h1{opacityt:0;transform:translate(-200px,0);color:#fff;max-width:550px;font-size: 40px;text-transform: uppercase;}
+#expertise h1{opacityt:0;transform:translate(-200px,0);color:#fff;max-width:550px;font-size: 35px;text-transform: uppercase;}
 #expertise h1 b{font-weight: 800;}
 @media (max-width: 1080px)   {/*tablet*/
   #expertise { height:auto;padding:100px 0;}
