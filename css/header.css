@@ -50,8 +50,7 @@ footer .container .rightContainer h2{color:#4b2deb;font-size: 30px;font-weight:8
 footer .container .rightContainer form{text-align: right;}
 footer .container .rightContainer form input[type="text"],
 footer .container .rightContainer form input[type="email"],
-footer .container .rightContainer form input[type="tel"],
-footer .container .rightContainer form textarea{width:calc(100% - 20px);padding:5px 10px 10px 10px;color:#727177;margin:15px 0;font-size:20;border:0;outline:none;border-bottom: 2px solid #b4b4b4;font-family: 'Sen', sans-serif, Arial;}
+footer .container .rightContainer form textarea{width:calc(100% - 0px);padding:5px 10px 10px 10px;color:#727177;margin:15px 0;font-size:20;border:0;outline:none;border-bottom: 2px solid #b4b4b4;font-family: 'Sen', sans-serif, Arial;}
 footer .container .rightContainer form textarea{height:100px;resize: none;}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color:#727177;font-weight: 800;font-size:20;font-family: 'Sen', sans-serif, Arial;
@@ -72,7 +71,6 @@ footer .container .rightContainer form input[type="submit"]:hover{cursor: pointe
 	footer .container .rightContainer form{text-align: right;}
 	footer .container .rightContainer form input[type="text"],
 	footer .container .rightContainer form input[type="email"],
-	footer .container .rightContainer form input[type="tel"],
 	footer .container .rightContainer form textarea{width:100%;}
 
 }
@@ -90,3 +88,4 @@ footer .up.active{opacity: 1;}
 footer .up:hover{border:3px solid #005cf5;cursor: pointer;}
 footer .up svg{fill:#005cf5;stroke:#005cf5;stroke-miterlimit:10;stroke-width:0.470551181102362px}
 footer .up:hover svg{stroke-width:1px;}
+

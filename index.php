@@ -2,6 +2,7 @@
 <head>
   <?php include('header_meta.php');?>
   <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <link rel="stylesheet" href="script/intl-tel-input/css/intlTelInput.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
@@ -278,7 +279,8 @@
 					<form id="form-footer">
 						<input type="text" name="name" min="2" required placeholder="NOMBRE" />
 						<input type="email" name="email" required placeholder="CORREO ELECTRÓNICO" />
-						<input type="tel" name="phone" size="15" minlength="15" required placeholder="TELÉFONO (10 dígitos)" pattern="[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"/>
+						<!-- <input type="tel" name="phone" size="15" minlength="15" required placeholder="TELÉFONO (10 dígitos)" pattern="[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"/> -->
+						<input type="tel" name="phone" id="phone">
 						<textarea name="mensaje" placeholder="MENSAJE"></textarea>
 						<input type="submit" name="" value="ENVIAR">
 						<p class="response" id="response"></p>
@@ -300,6 +302,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
 		<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
+		<script src="script/intl-tel-input/js/intlTelInput.js"></script>
 	    <script type="text/javascript" src="script/header.js"></script>
 	    <script type="text/javascript" src="script/sense-path.js"></script>
 

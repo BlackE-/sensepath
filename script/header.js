@@ -1,26 +1,35 @@
 //form footer
-	const form1 = document.getElementById("form-footer"); 
+    const form1 = document.getElementById("form-footer"); 
     const response = document.getElementById('response');
     const name = form1.elements['name'];
     const phone = form1.elements['phone'];
     const email = form1.elements['email'];
     const mensaje = form1.elements['mensaje'];
 
-    phone.addEventListener("keyup",event =>{
-        // console.log(event);
-        let format = formatPhoneFunction(phone.value);
-        phone.value = format;
-    })
-    function formatPhoneFunction(obj){
-        if(obj.length > 14){
-            console.log(obj.length);
-            return obj.substring(0, 14);
-        }
-        var numbers = obj.replace(/\D/g, ''),char = {0:'(',2:') ',6:'-'};
-        obj = '';
-        for (var i = 0; i < numbers.length; i++) {obj += (char[i]||'') + numbers[i];}
-        return obj;
-    }
+    const itl = intlTelInput(phone, {
+      formatOnDisplay: false,
+      placeholderNumberType: "MOBILE",
+      initialCountry: "mx",
+      utilsScript: "script/intl-tel-input/js/utils.js",
+    });
+
+    // phone.addEventListener("keyup",event =>{
+    //     // console.log(event);
+    //     let format = formatPhoneFunction(phone.value);
+    //     phone.value = format;
+    // })
+    // var input = document.querySelector("#phone");
+      
+    // function formatPhoneFunction(obj){
+    //     if(obj.length > 14){
+    //         console.log(obj.length);
+    //         return obj.substring(0, 14);
+    //     }
+    //     var numbers = obj.replace(/\D/g, ''),char = {0:'(',2:') ',6:'-'};
+    //     obj = '';
+    //     for (var i = 0; i < numbers.length; i++) {obj += (char[i]||'') + numbers[i];}
+    //     return obj;
+    // }
 
 
 
@@ -45,6 +54,6 @@
          };
          xhttp.open("POST", "script/enviarFormularioFooter.php", true);
          xhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');
-         xhttp.send("name="+name.value+"&phone="+phone.value+"&email="+email.value+"&mensaje="+mensaje.value);
+         xhttp.send("name="+name.value+"&phone="+itl.getNumber()+"&email="+email.value+"&mensaje="+mensaje.value);
          
     });
